@@ -3,6 +3,6 @@ import videoCtrl from "./videoCtrl";
 
 const videoRouter = Router();
 
-videoRouter.get('/', videoCtrl.sendVideo)
+videoRouter.get('/videos', videoCtrl.sendVideo)
 
 export default videoRouter;

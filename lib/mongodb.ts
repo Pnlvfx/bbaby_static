@@ -10,7 +10,7 @@ console.log("Databases:")
 databasesList.databases.forEach(db => console.log(db.name))
 }
 
-const getBBCnews = async () => {
+const main = async () => {
     await client.connect();
     await listDatabases(client)
     console.log('Connected successfully to server');
@@ -21,9 +21,9 @@ const getBBCnews = async () => {
     return 'done';
 }
 
-getBBCnews()
+main()
 .then()
 .catch(console.error)
 .finally(() => client.close());
 
-export default getBBCnews;
+export default main;

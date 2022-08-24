@@ -6,12 +6,15 @@ import videoRouter from './components/videoRouter';
 const app = express();
 app.use(compression())
 
+const base_path = '/home/simone/simone/coraline';
 
-app.use('/video', videoRouter);
-app.use('/b/api/images', imageRouter);
+app.get('/videos', videoRouter);
+//app.get('/images', imageRouter);
 
-app.use('/b/gov/BBCnews', express.static('b/gov/BBCnews'))
-app.use('/images', express.static('images'));
+//app.use('/BBCnews', express.static(`${base_path}/static/videos`));
+//app.use('/images', express.static(`${base_path}/static/images`));
+//app.use('/videos', videoRouter, express.static(`${base_path}/static/videos`));
 
 
 app.listen(8080);
+

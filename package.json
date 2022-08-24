@@ -11,19 +11,17 @@
   "scripts": {
     "dev": "nodemon server.ts"
   },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^18.7.9",
-    "@types/probe-image-size": "^7.2.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.7.4"
-  },
   "dependencies": {
     "@types/compression": "^1.7.2",
     "compression": "^1.7.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongodb": "^4.9.0",
-    "probe-image-size": "^7.2.3"
+    "mongodb": "^4.9.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   }
 }
