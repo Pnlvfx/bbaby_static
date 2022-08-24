@@ -2,9 +2,10 @@ import express from 'express';
 import compression from 'compression';
 import imageRouter from './components/imageRouter';
 import videoRouter from './components/videoRouter';
+import cors from './middleware/cors';
 
 const app = express();
-app.use(compression())
+app.use(compression());
 
 const base_path = '/home/simone/simone/coraline';
 
