@@ -8,7 +8,7 @@ app.use(compression())
 
 const base_path = '/home/simone/simone/coraline';
 
-app.get('/videos', videoRouter);
+app.use('/videos', videoRouter);
 //app.get('/images', imageRouter);
 
 //app.use('/BBCnews', express.static(`${base_path}/static/videos`));
